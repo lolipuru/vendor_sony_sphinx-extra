@@ -20,7 +20,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/sony/sphinx',
+    'vendor/sony/extras',
 ]
 
 def lib_fixup_system_suffix(lib: str, partition: str, *args, **kwargs):
