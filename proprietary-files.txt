@@ -1,0 +1,35 @@
+# Camera libs
+system/bin/cacaoserver
+system/etc/init/cacaoserver.rc
+system/lib/libcacao_client.so
+system/lib/libcacao_pal.so
+system/lib/libcacao_process_ctrl_gateway.so
+system/lib/libcacao_service.so
+system/lib/libimageprocessorjni.so
+system/lib/vendor.somc.hardware.camera.cacao@1.0.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.cacao@2.0.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.cacao@3.0.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.cacao@3.1.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.cacao@3.2.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.device@1.0.so;MODULE_SUFFIX=-system
+system/lib/vendor.somc.hardware.camera.provider@1.0.so;MODULE_SUFFIX=-system
+system/lib64/libcacao_client.so
+system/lib64/libcacao_pal.so
+system/lib64/libimageprocessorjni.so
+
+# Frameworks
+product/framework/com.sonymobile.camera.addon_impl.jar
+system/framework/com.sony.device.jar:system_ext/framework/com.sony.device.jar;MAKE_COPY_RULE_ONLY
+system/framework/com.sonyericsson.idd_impl.jar:system_ext/framework/com.sonyericsson.idd_impl.jar;MAKE_COPY_RULE_ONLY
+system/framework/com.sonymobile.credentialmanager_impl.jar
+system/framework/com.sonymobile.devicesecurity_impl.jar
+system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar
+
+# Permissions
+product/etc/permissions/com.sonymobile.camera.addon.xml
+system/etc/permissions/com.sony.device.xml:system_ext/etc/permissions/com.sony.device.xml
+system/etc/permissions/com.sonyericsson.idd.xml:system_ext/etc/permissions/com.sonyericsson.idd.xml
+system/etc/permissions/com.sonymobile.credentialmanager.xml
+system/etc/permissions/com.sonymobile.devicesecurity.xml
+system/etc/permissions/privapp-permissions-sony.xml:system_ext/etc/permissions/privapp-permissions-sony.xml
+system/etc/permissions/com.sonymobile.imageprocessor.xml
