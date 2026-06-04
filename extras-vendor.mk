@@ -1,3 +1,5 @@
+$(call inherit-product, vendor/sony/extras/camera/camera-vendor.mk)
+
 PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/extras
 

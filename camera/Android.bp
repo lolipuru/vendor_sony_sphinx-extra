@@ -1,0 +1,514 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "device/sony/sphinx",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "libcacao_client",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libcacao_client.so",
+            ],
+            shared_libs: [
+                "libshim_binder",
+                "libbinder",
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libcacao_pal",
+                "liblog",
+                "libandroid",
+                "libhidlbase",
+                "android.hidl.manager@1.0",
+                "android.hidl.base@1.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.mapper@3.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcacao_client.so",
+            ],
+            shared_libs: [
+                "libshim_binder",
+                "libbinder",
+                "libcutils",
+                "libhardware",
+                "libutils",
+                "libcacao_pal",
+                "liblog",
+                "libandroid",
+                "libhidlbase",
+                "android.hidl.manager@1.0",
+                "android.hidl.base@1.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.mapper@3.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcacao_pal",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libcacao_pal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcacao_pal.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libutilscallstack",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libimageprocessorjni",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libimageprocessorjni.so",
+            ],
+            shared_libs: [
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "android.hardware.graphics.allocator@3.0",
+                "libcacao_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libimageprocessorjni.so",
+            ],
+            shared_libs: [
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "android.hardware.graphics.allocator@3.0",
+                "libcacao_client",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcacao_process_ctrl_gateway",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libcacao_process_ctrl_gateway.so",
+            ],
+            shared_libs: [
+                "libgui_shim",
+                "libandroid",
+                "libbinder",
+                "libcutils",
+                "libhidlbase",
+                "libutils",
+                "libgui",
+                "libcacao_pal",
+                "libcacao_client",
+                "android.hidl.manager@1.0",
+                "android.hidl.base@1.0",
+                "android.hardware.graphics.allocator@3.0",
+                "vendor.somc.hardware.camera.provider@1.0-system",
+                "vendor.somc.hardware.camera.cacao@3.0-system",
+                "vendor.somc.hardware.camera.cacao@3.1-system",
+                "vendor.somc.hardware.camera.cacao@3.2-system",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcacao_service",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/libcacao_service.so",
+            ],
+            shared_libs: [
+                "libui",
+                "libutils",
+                "libbinder",
+                "libcutils",
+                "libcacao_client",
+                "libcacao_process_ctrl_gateway",
+                "liblog",
+                "libandroid",
+                "libhidlbase",
+                "android.hidl.manager@1.0",
+                "android.hidl.base@1.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.camera.provider@2.4",
+                "vendor.somc.hardware.camera.provider@1.0-system",
+                "vendor.somc.hardware.camera.cacao@3.0-system",
+                "vendor.somc.hardware.camera.cacao@3.1-system",
+                "vendor.somc.hardware.camera.cacao@3.2-system",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.cacao@1.0-system",
+    stem: "vendor.somc.hardware.camera.cacao@1.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.cacao@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.cacao@2.0-system",
+    stem: "vendor.somc.hardware.camera.cacao@2.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.cacao@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.cacao@3.0-system",
+    stem: "vendor.somc.hardware.camera.cacao@3.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.cacao@3.1-system",
+    stem: "vendor.somc.hardware.camera.cacao@3.1",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.1.so",
+            ],
+            shared_libs: [
+                "vendor.somc.hardware.camera.cacao@3.0-system",
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.cacao@3.2-system",
+    stem: "vendor.somc.hardware.camera.cacao@3.2",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.2.so",
+            ],
+            shared_libs: [
+                "vendor.somc.hardware.camera.cacao@3.0-system",
+                "vendor.somc.hardware.camera.cacao@3.1-system",
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.device@1.0-system",
+    stem: "vendor.somc.hardware.camera.device@1.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.device@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common@1.0",
+                "android.hardware.camera.device@1.0",
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.somc.hardware.camera.provider@1.0-system",
+    stem: "vendor.somc.hardware.camera.provider@1.0",
+    owner: "sony",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/lib/vendor.somc.hardware.camera.provider@1.0.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common@1.0",
+                "android.hardware.camera.device@1.0",
+                "android.hardware.camera.device@3.2",
+                "android.hardware.camera.provider@2.4",
+                "vendor.somc.hardware.camera.cacao@1.0-system",
+                "vendor.somc.hardware.camera.cacao@2.0-system",
+                "vendor.somc.hardware.camera.cacao@3.0-system",
+                "vendor.somc.hardware.camera.cacao@3.1-system",
+                "vendor.somc.hardware.camera.device@1.0-system",
+                "libhidlbase-v32",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+}
+
+dex_import {
+    name: "com.sonymobile.credentialmanager_impl",
+    owner: "sony",
+    jars: [
+        "proprietary/system/framework/com.sonymobile.credentialmanager_impl.jar",
+    ],
+}
+
+dex_import {
+    name: "com.sonymobile.devicesecurity_impl",
+    owner: "sony",
+    jars: [
+        "proprietary/system/framework/com.sonymobile.devicesecurity_impl.jar",
+    ],
+}
+
+dex_import {
+    name: "com.sonymobile.imageprocessor.bypasscamera_impl",
+    owner: "sony",
+    jars: [
+        "proprietary/system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar",
+    ],
+}
+
+dex_import {
+    name: "com.sonymobile.camera.addon_impl",
+    owner: "sony",
+    jars: [
+        "proprietary/product/framework/com.sonymobile.camera.addon_impl.jar",
+    ],
+    product_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "cacaoserver",
+    owner: "sony",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/system/bin/cacaoserver",
+            ],
+            shared_libs: [
+                "libshim_hidl",
+                "liblog",
+                "libutils",
+                "libui",
+                "libgui",
+                "libbinder",
+                "libhidlbase",
+                "libcacao_service",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+}
