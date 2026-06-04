@@ -51,9 +51,18 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     (
+        'system/lib/libcacao_client.so',
+        'system/lib64/libcacao_client.so',
+    ): blob_fixup()
+        .add_needed('libshim_binder.so'),
+    (
         'system/lib/libcacao_process_ctrl_gateway.so',
     ): blob_fixup()
         .add_needed('libgui_shim.so'),
+    (
+        'system/bin/cacaoserver',
+    ): blob_fixup()
+        .add_needed('libshim_hidl.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
