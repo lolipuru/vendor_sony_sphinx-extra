@@ -1,0 +1,1 @@
+allow init cacaoserver_exec:file r_file_perms;
