@@ -1,1 +1,0 @@
-allow hwservicemanager cacaoserver:binder { call transfer };
